@@ -12,21 +12,21 @@ __author__ = "730327440"
 from random import randint
 
 
-score: int = randint(1, 5)  
+score = randint(1, 100)  
 print(score)
 
 
 print("Your fortune cookie says...")
-if score == 1:
+if score <= 13:
     print("You will be able to buy as much boba you want without any consequences.")
 else:
-    if score == 2:
+    if score >= 75:
         print("Your life will be full of happiness and love.")
     else:
-        if score == 3:
+        if score == 45:
             print("You have a great deal of success in your future.")
         else:   
-            if score == 4:
+            if score >= 23 or score == 44:
                 print("Don’t let your limitations overshadow your talents.")
             else: 
                 print("You will have many cute dogs.")
