@@ -30,4 +30,5 @@ days_remaining = remaining_population / people_vax_per_day
 today = datetime.today()
 deadline = today + timedelta(days_remaining)
 
-print( "We will reach " + str(round(target_percent_vaccinated)) + "% vaccination in " + str(round(days_remaining)) + " days, which falls on " + deadline.strftime("%B %d, %Y")+".")
+print( "We will reach " + str(round(target_percent_vaccinated)) + "% vaccination in " + str(
+    round(days_remaining)) + " days, which falls on " + deadline.strftime("%B %d, %Y") + ".")
