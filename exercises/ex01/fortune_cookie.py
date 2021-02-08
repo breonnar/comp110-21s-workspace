@@ -11,18 +11,20 @@ __author__ = "730327440"
 # It will evaluate to an int value >= 1 and <= 100. 
 from random import randint
 
-print(randint(1,100))
 
 
-score: int = int(input("Pick a number between 0-100: "))
+score = randint(1, 100)  
+print(score)
 
 
 print("Your fortune cookie says...")
-if score < 45 :
+if score <= 13 :
     print("You will be able to buy as much boba you want without any consequences.")
 if score >= 75 :
     print("Your life will be full of happiness and love.")
 else:
-    if score >=45 :
+    if score == 45 :
         print("You have a great deal of success in your future.")
+    if score >= 23 or score == 44  :
+        print("Don’t let your limitations overshadow your talents.")
 print("Now, go spread positive vibes!")

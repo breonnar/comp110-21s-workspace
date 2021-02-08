@@ -22,8 +22,8 @@ doses_given = float(input("Doses given:"))
 doses_given_per_day = float(input("Doses given per day:"))
 target_percent_vaccinated = float(input("Target percent vaccinated:"))
 
-percent_vaccination_goal_population = population * (target_percent_vaccinated/100)
-remaining_population = percent_vaccination_goal_population-(doses_given/2)
+percent_vaccination_goal_population = population * (target_percent_vaccinated / 100 )
+remaining_population = percent_vaccination_goal_population-(doses_given / 2 )
 people_vax_per_day = doses_given_per_day / 2
 days_remaining = remaining_population / people_vax_per_day
 
@@ -31,4 +31,6 @@ today = datetime.today()
 deadline = today + timedelta(days_remaining)
 
 
-print( "We will reach " + str(round(target_percent_vaccinated)) + "% vaccination in " + str(round(days_remaining)) + "days, which falls on "+ deadline.strftime("%B %d, %Y")+".")
+print( "We will reach " + str(round(target_percent_vaccinated)) + "% vaccination in " 
++ str(round(days_remaining)) + " days, which falls on " 
++ deadline.strftime("%B %d, %Y")+".")
