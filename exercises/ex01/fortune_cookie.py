@@ -12,7 +12,6 @@ __author__ = "730327440"
 from random import randint
 
 
-
 score = randint(1, 100)  
 print(score)
 
