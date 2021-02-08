@@ -19,11 +19,15 @@ print(score)
 print("Your fortune cookie says...")
 if score <= 13:
     print("You will be able to buy as much boba you want without any consequences.")
-if score >= 75:
-    print("Your life will be full of happiness and love.")
 else:
-    if score == 45:
-        print("You have a great deal of success in your future.")
-    if score >= 23 or score == 44:
-        print("Don’t let your limitations overshadow your talents.")
+    if score >= 75:
+        print("Your life will be full of happiness and love.")
+    else:
+        if score == 45:
+            print("You have a great deal of success in your future.")
+        else:   
+            if score >= 23 or score == 44:
+                print("Don’t let your limitations overshadow your talents.")
+            else: 
+                print("You will have many cute dogs.")
 print("Now, go spread positive vibes!")
