@@ -21,7 +21,7 @@ def tar_heels(a: int) -> str:
             return "HEELS"
         if a % 2 != 0 and a % 7 != 0:
             return "CAROLINA"
-    
+
 
 
 

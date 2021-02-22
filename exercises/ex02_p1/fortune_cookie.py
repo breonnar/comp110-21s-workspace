@@ -21,7 +21,7 @@ def fortune_cookie() -> str:
         return("You will be able to buy as much boba you want without any consequences.")
     else:
         return("Your life will be full of happiness and love.")
-    return str(score) 
+    return str(score)
 
 
 
