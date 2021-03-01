@@ -9,7 +9,7 @@ adventure_points: int = 0
 CHILLY = "\U0001F427"
 
 
-def greet():
+def greet(): -> None:
     """Kindly greet the player."""
     print(f"Greetings! {player}, welcome to Python's Pet Penguins! {CHILLY}")
     print("Penguin Points:")
@@ -18,7 +18,7 @@ def greet():
     print(adventure_points)
 
 
-def intro():
+def intro(): -> None:
     """Beginning of the game."""
     print( "To begin...")
     pet_name = input ( "What is the name of your pet? " )
@@ -30,7 +30,7 @@ def intro():
     print(adventure_points)
 
 
-def morning(): 
+def morning(): -> None:
     """Good Morning Penguins!"""
     print ( "Good morning, let's see how the weather is today!" )
 #Choose weather to begin day 
@@ -65,7 +65,7 @@ def morning():
             windy_plans()
 
 
-def snow_plans():
+def snow_plans(): -> None:
     """What will you do while it is snowing?"""
     todays_forecast == "snowy"
     while True:
@@ -91,7 +91,7 @@ def snow_plans():
             break
     
 
-def sunny_plans():
+def sunny_plans(): -> None:
     """What will you do while it is sunny?"""
     todays_forecast == "sunny"
     while True: 
@@ -114,7 +114,7 @@ def sunny_plans():
         break
 
 
-def windy_plans():
+def windy_plans(): -> None:
     """What will you do when it is windy?"""
     todays_forecast == "windy"
     while True:
@@ -137,7 +137,7 @@ def windy_plans():
             break
 
 
-def rainy_plans():
+def rainy_plans(): -> None:
         """What will you do when it is rainy?"""
         todays_forecast == "rainy"
         while True:
@@ -165,7 +165,7 @@ def rainy_plans():
                 break
 
 
-def bonus():
+def bonus(): -> None:
     """Give the player bonus points"""
     print(f"Hello {player}!")
     while True: 
