@@ -1,4 +1,5 @@
 """Python Penguin"""
+
 __author__: str = "730327440"
 
 
