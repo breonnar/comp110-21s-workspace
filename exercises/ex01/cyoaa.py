@@ -1,4 +1,7 @@
 """Python Penguin"""
+__author__: str = "730327440"
+
+
 import random
 todays_forecast = random.choice("weather")
 player: str = input( "What is your name? " )
