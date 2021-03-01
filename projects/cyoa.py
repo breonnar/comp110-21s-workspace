@@ -4,13 +4,15 @@ __author__: str = "730327440"
 
 import random
 todays_forecast = random.choice("weather")
-player: str = input( "What is your name? " )
+player: str 
 adventure_points: int = 0
 CHILLY = "\U0001F427"
 
 
 def greet():
     """Kindly greet the player."""
+    global player
+    player = input( "What is your name? " )
     print(f"Greetings! {player}, welcome to Python's Pet Penguins! {CHILLY}")
     print("Penguin Points:")
     global adventure_points
@@ -176,7 +178,7 @@ def bonus():
                 print("You have been awared 20 bonus points!")
                 print(f"Penguin Points:")
                 global adventure_points
-                adventure_points += 10
+                adventure_points += 20
                 print(adventure_points)
             if bonus_points == "B":
                 print("You have been awared 1 bonus point! Better luck next time!")
