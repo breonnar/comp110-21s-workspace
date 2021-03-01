@@ -1,4 +1,4 @@
-"""Python Penguin"""
+"""Python Penguin!"""
 __author__: str = "730327440"
 
 
@@ -9,10 +9,10 @@ adventure_points: int = 0
 CHILLY = "\U0001F427"
 
 
-def greet():
+def greet() -> None:
     """Kindly greet the player."""
     global player
-    player = input( "What is your name? " )
+    player = input("What is your name? ")
     print(f"Greetings! {player}, welcome to Python's Pet Penguins! {CHILLY}")
     print("Penguin Points:")
     global adventure_points
@@ -20,26 +20,26 @@ def greet():
     print(adventure_points)
 
 
-def intro():
+def intro()-> None:
     """Beginning of the game."""
-    print( "To begin...")
-    pet_name = input ( "What is the name of your pet? " )
-    print(f" {pet_name} , what a lovely name!" )
-    print( "Let's Start!" )
+    print("To begin...")
+    pet_name = input ("What is the name of your pet? ")
+    print(f" {pet_name} , what a lovely name!")
+    print("Let's Start!")
     print("Penguin Points:")
     global adventure_points
     adventure_points += 10
     print(adventure_points)
 
 
-def morning():
+def morning()-> None:
     """Good Morning Penguins!"""
-    print ( "Good morning, let's see how the weather is today!" )
-#Choose weather to begin day 
+    print ("Good morning, let's see how the weather is today!")
+    # Choose weather to begin day 
     weather : str = ["snowy", "sunny", "rainy", "windy"]
     todays_forecast = random.choice(weather)
     print(f"The weather today is {todays_forecast}!")
-    if todays_forecast == "snowy" :
+    if todays_forecast == "snowy":
         print(f"{CHILLY} wants to know waddle do today.")
         print(f"Penguin Points:")
         global adventure_points
@@ -47,13 +47,13 @@ def morning():
         print(adventure_points)
         snow_plans()   
     else:
-        if todays_forecast == "sunny" : 
+        if todays_forecast == "sunny": 
             print(f"{CHILLY} wants to know waddle do today.")
             print(f"Penguin Points:")
             adventure_points += 5
             print(adventure_points)
             sunny_plans()
-        if todays_forecast == "rainy" :
+        if todays_forecast == "rainy":
             print(f"{CHILLY} wants to know waddle do today.")
             print(f"Penguin Points:")
             adventure_points += 5
@@ -67,7 +67,7 @@ def morning():
             windy_plans()
 
 
-def snow_plans():
+def snow_plans()-> None:
     """What will you do while it is snowing?"""
     todays_forecast == "snowy"
     while True:
@@ -78,13 +78,13 @@ def snow_plans():
                 print("Yay! Great choice!Let's go have fun in the snow!")
                 print(f" \u2744 \u2744 \u2744 \u2603 {CHILLY} \u2744 \u2744 \u2744")
                 print(f" \u2615 {CHILLY}")
-                print(f"Penguin Points:") 
+                print("Penguin Points:") 
                 global adventure_points
                 adventure_points += 10
                 print(adventure_points)
             elif snow_ans == "B":
-                print("Oh no! It is way too cold for picking strawberries! Not the best choice!                                               \
-                    You tried to go strawberry picking, but ended up with a cold instead (because it is not strawberry season...).")
+                print("Oh no! It is way too cold for picking strawberries! Not the best choice!")
+                print("You tried to go strawberry picking, but ended up with a cold instead (because it is not strawberry season...).")
                 print("Since you now have a cold, you must go see the doctor!")
                 print(f"\U0001F328 \U0001F6AB \U0001F353")
                 print(f"Penguin Points:")
@@ -93,7 +93,7 @@ def snow_plans():
             break
     
 
-def sunny_plans():
+def sunny_plans()-> None:
     """What will you do while it is sunny?"""
     todays_forecast == "sunny"
     while True: 
@@ -116,7 +116,7 @@ def sunny_plans():
         break
 
 
-def windy_plans():
+def windy_plans()-> None:
     """What will you do when it is windy?"""
     todays_forecast == "windy"
     while True:
@@ -125,31 +125,32 @@ def windy_plans():
         #whenever it is equal, break the loop
             if windy_ans == "A": 
                 print("Execellent Choice! You are now ready to show your friends your new red kite!")
-                print(f"\U0001F332 \U0001F32C \U0001FA81 {CHILLY} \U0001F43B \U0001F994 \U0001F415 \U0001F43C \U0001F332 ")
+                print(f"\U0001F332 \U0001F32C \U0001FA81 {CHILLY} \U0001F43B \U0001F994 \U0001F415 \U0001F43C \U0001F332")
                 print(f"Penguin Points:") 
                 global adventure_points
                 adventure_points += 10
                 print(adventure_points)
             if windy_ans == "B": 
-                print("While badminton with friends is a lot of fun, it is not the best choice because the wind unfortnatlety causes the birdie to fly in the wrong direction. It looks as if you guys have lost 2 birdies so far.")
+                print("While badminton with friends is a lot of fun, it is not the best choice because the wind unfortnatlety causes the birdie to fly in the wrong direction.")
+                print("It looks as if you guys have lost 2 birdies so far.")
                 print(f" \U0001F32C \U0001F3F8 \U0001F6AB ")
-                print(f"Penguin Points:")
+                print("Penguin Points:")
                 adventure_points -= 10
                 print(adventure_points)
             break
 
 
-def rainy_plans():
+def rainy_plans()-> None:
         """What will you do when it is rainy?"""
         todays_forecast == "rainy"
         while True:
-            rainy_ans = input("Do you want to: A) Go outside for a long walk while listening to your favorite music. B) Stay indoors, play video games, and chat with friends! ")
+            rainy_ans = input("Do you want to: A) Go outside for a long walk while listening to your favorite music. B) Stay indoors and play video games with friends! ")
             if rainy_ans in ["A","B"]:
-        #whenever it is equal, break the loop
+        # whenever it is equal, break the loop
                 if rainy_ans == "A" : 
                     print("This would be an excellent choice if we owned rainboots, so how about we go shopping for some later? ")
-                    print(f" \U0001F327  \U000027A1  \U0001F6CD \U0001F462 	")
-                    print(f"Penguin Points:")
+                    print(" \U0001F327  \U000027A1  \U0001F6CD \U0001F462 	")
+                    print("Penguin Points:")
                     global adventure_points
                     adventure_points -= 10
                     print(adventure_points)
@@ -159,16 +160,16 @@ def rainy_plans():
                     adventure_points += 10
                     print(adventure_points)
                     video_games = input("What video game do you want to play?: ")
-                    print("That game is such a good choice! Thanks for choosing!")
+                    print(f"{video_games} is such a good choice! Thanks for choosing!")
                     print(f"\U0001F327   \U0001F6AA     \U0001F3AE 	 {CHILLY}    \U0001FA91   \U0001F327 ")
-                    print(f"Penguin Points:")
+                    print("Penguin Points:")
                     adventure_points -= 10
                     print(adventure_points)
                 break
 
 
-def bonus():
-    """Give the player bonus points"""
+def bonus()-> None:
+    """Give the player bonus points!"""
     print(f"Hello {player}!")
     while True: 
         print("Time to earn bonus Penguin Points!")
@@ -176,23 +177,23 @@ def bonus():
         if bonus_points in ["A","B", "C", "D"]:
             if bonus_points == "A":
                 print("You have been awared 20 bonus points!")
-                print(f"Penguin Points:")
+                print("Penguin Points:")
                 global adventure_points
                 adventure_points += 20
                 print(adventure_points)
             if bonus_points == "B":
                 print("You have been awared 1 bonus point! Better luck next time!")
-                print(f"Penguin Points:")
+                print("Penguin Points:")
                 adventure_points += 1
                 print(adventure_points)
             if bonus_points == "C":
                 print("You have been awared 250 bonus points! Congratulations!")
-                print(f"Penguin Points:")
+                print("Penguin Points:")
                 adventure_points += 250
                 print(adventure_points)
             if bonus_points == "D":
                 print("You have been awared 1000 bonus points! Amazing!")
-                print(f"Penguin Points:")
+                print("Penguin Points:")
                 adventure_points += 1000
                 print(adventure_points)
             break
@@ -207,7 +208,7 @@ def main() -> None:
         next_day = input ("Would you like to continue to  the next day? Enter Yes or No:" )
         if next_day == "Yes":
             print("Welcome back! Here is 300 Penguin Points for your return!")
-            print(f"Penguin Points:")
+            print("Penguin Points:")
             global adventure_points
             adventure_points += 300
             print(adventure_points)
