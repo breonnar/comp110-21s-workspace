@@ -145,7 +145,7 @@ def rainy_plans() -> None:
     """What will you do when it is rainy?"""
     todays_forecast == "rainy"
     while True:
-        rainy_ans = input("Do you want to: A) Go for a long walk while listening to music. B) Stay indoors and play video games! ")
+        rainy_ans = input("Do you want to: A) Go for a long walk. B) Stay indoors and play video games! ")
         if rainy_ans in ["A", "B"]:
             # whenever it is equal, break the loop
             if rainy_ans == "A": 
