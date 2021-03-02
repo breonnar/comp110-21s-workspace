@@ -97,11 +97,11 @@ def sunny_plans() -> None:
     """What will you do while it is sunny?"""
     todays_forecast == "sunny"
     while True: 
-        sun_ans = input( "Do you want to: A) Sleep in and tell your friend Paula Bear that you'll hang out later. B) Swim at the beach with your friend, Paula Bear.  [A/B] ? :")
-        if sun_ans in ["A","B"]:
-        #whenever it is equal, break the loop
+        sun_ans = input("Do you want to: A) Sleep in. B) Swim at the beach with your friend, Paula Bear.  [A/B] ? :")
+        if sun_ans in ["A", "B"]:
+            # whenever it is equal, break the loop
             if sun_ans == "A": 
-                print("Although sleeping in is great, it has now messed up your sleeping schedule. Also, Paul Bear missed you today!")
+                print("Although sleeping in is great, it has now messed up your sleeping schedule.")
                 print(f"\U0001F6CC \U0001F6AB ")
                 print("Penguin Points:") 
                 global points
@@ -122,7 +122,7 @@ def windy_plans() -> None:
     todays_forecast == "windy"
     while True:
         windy_ans = input("Do you want to: A) Go fly kites with friends. B) Play badminton with friends. [A/B] ? :")
-        if windy_ans in ["A","B"]:
+        if windy_ans in ["A", "B"]:
         # whenever it is equal, break the loop
             if windy_ans == "A": 
                 print("Execellent Choice! You are now ready to show your friends your new red kite!")
@@ -142,20 +142,21 @@ def windy_plans() -> None:
 
 
 def rainy_plans() -> None:
-        """What will you do when it is rainy?"""
+    """What will you do when it is rainy?"""
         todays_forecast == "rainy"
         while True:
             rainy_ans = input("Do you want to: A) Go outside for a long walk while listening to your favorite music. B) Stay indoors and play video games with friends! ")
             if rainy_ans in ["A","B"]:
-        # whenever it is equal, break the loop
-                if rainy_ans == "A" : 
-                    print("This would be an excellent choice if we owned rainboots, so how about we go shopping for some later? ")
-                    print(" \U0001F327  \U000027A1  \U0001F6CD \U0001F462 	")
+            # whenever it is equal, break the loop
+                if rainy_ans == "A": 
+                    print("This would be an excellent choice if we owned rainboots,")
+                    print("so how about we go shopping for some later? ")
+                    print(f"\U0001F327  \U000027A1  \U0001F6CD \U0001F462 ")
                     print("Penguin Points:")
                     global points
                     points -= 10
                     print(points)
-                if rainy_ans == "B" : 
+                if rainy_ans == "B": 
                     print("Sounds like so much fun! I wonder which games we'll play today. How about you choose!")
                     print("Penguin Points:")
                     points += 10
@@ -175,7 +176,7 @@ def bonus() -> None:
     while True: 
         print("Time to earn bonus Penguin Points!")
         bonus_points = input("Choose A) , B) , C), D)")
-        if bonus_points in ["A","B", "C", "D"]:
+        if bonus_points in ["A","B", "C","D"]:
             if bonus_points == "A":
                 print("You have been awared 20 bonus points!")
                 print("Penguin Points:")
@@ -201,12 +202,13 @@ def bonus() -> None:
 
 
 def main() -> None:
+    """The functions for my function."""
     greet()
     intro()
     morning()
     bonus()
     while True: 
-        next_day = input ("Would you like to continue to  the next day? Enter Yes or No: ")
+        next_day = input("Would you like to continue to  the next day? Enter Yes or No: ")
         if next_day == "Yes":
             print("Welcome back! Here is 300 Penguin Points for your return!")
             print("Penguin Points:")
