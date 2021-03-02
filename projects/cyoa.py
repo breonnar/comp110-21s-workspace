@@ -34,9 +34,9 @@ def intro() -> None:
 
 def morning() -> None:
     """Good Morning Penguins!"""
-    print ("Good morning, let's see how the weather is today!")
+    print("Good morning, let's see how the weather is today!")
     # Choose weather to begin day 
-    weather : list[str] = ["snowy", "sunny", "rainy", "windy"]
+    weather: list[str] = ["snowy", "sunny", "rainy", "windy"]
     todays_forecast = random.choice(weather)
     print(f"The weather today is {todays_forecast}!")
     if todays_forecast == "snowy":
@@ -72,7 +72,7 @@ def snow_plans() -> None:
     todays_forecast == "snowy"
     while True:
         snow_ans = input("Do you want to: A) Build a snowman and drink hot chocolate. B) Pick strawberries. [A/B] ? :")
-        if snow_ans in ["A","B"]:
+        if snow_ans in ["A", "B"]:
             # whenever it is equal to A or B, break the loop
             if snow_ans == "A": 
                 print("Yay! Great choice!Let's go have fun in the snow!")
@@ -123,17 +123,17 @@ def windy_plans() -> None:
     while True:
         windy_ans = input("Do you want to: A) Go fly kites with friends. B) Play badminton with friends. [A/B] ? :")
         if windy_ans in ["A", "B"]:
-        # whenever it is equal, break the loop
+            # whenever it is equal, break the loop
             if windy_ans == "A": 
                 print("Execellent Choice! You are now ready to show your friends your new red kite!")
-                print(f"\U0001F332 \U0001F32C \U0001FA81 {CHILLY} \U0001F43B \U0001F994 \U0001F415 \U0001F43C \U0001F332")
+                print(f"\U0001F332 \U0001F32C \U0001FA81{CHILLY} \U0001F43B \U0001F994 \U0001F415 \U0001F43C \U0001F332")
                 print("Penguin Points:") 
                 global points
                 points += 10
                 print(points)
             if windy_ans == "B": 
-                print("While badminton with friends is a lot of fun, it is not the best choice because the wind unfortnatlety causes the birdie to fly in the wrong direction.")
-                print("It looks as if you guys have lost 2 birdies so far.")
+                print("While badminton with friends is a lot of fun, it is not the best choice.")
+                print("The wind  causes the birdie to fly in the wrong direction. It looks as if you guys have lost 2 birdies so far.")
                 print(f" \U0001F32C \U0001F3F8 \U0001F6AB ")
                 print("Penguin Points:")
                 points -= 10
@@ -143,31 +143,31 @@ def windy_plans() -> None:
 
 def rainy_plans() -> None:
     """What will you do when it is rainy?"""
-        todays_forecast == "rainy"
-        while True:
-            rainy_ans = input("Do you want to: A) Go outside for a long walk while listening to your favorite music. B) Stay indoors and play video games with friends! ")
-            if rainy_ans in ["A","B"]:
-            # whenever it is equal, break the loop
-                if rainy_ans == "A": 
-                    print("This would be an excellent choice if we owned rainboots,")
-                    print("so how about we go shopping for some later? ")
-                    print(f"\U0001F327  \U000027A1  \U0001F6CD \U0001F462 ")
-                    print("Penguin Points:")
-                    global points
-                    points -= 10
-                    print(points)
-                if rainy_ans == "B": 
-                    print("Sounds like so much fun! I wonder which games we'll play today. How about you choose!")
-                    print("Penguin Points:")
-                    points += 10
-                    print(points)
-                    video_games = input("What video game do you want to play?: ")
-                    print(f"{video_games} is such a good choice! Thanks for choosing!")
-                    print(f"\U0001F327   \U0001F6AA     \U0001F3AE 	 {CHILLY}    \U0001FA91   \U0001F327 ")
-                    print("Penguin Points:")
-                    points -= 10
-                    print(points)
-                break
+    todays_forecast == "rainy"
+    while True:
+        rainy_ans = input("Do you want to: A) Go outside for a long walk while listening to your favorite music. B) Stay indoors and play video games with friends! ")
+        if rainy_ans in ["A", "B"]:
+        # whenever it is equal, break the loop
+            if rainy_ans == "A": 
+                print("This would be an excellent choice if we owned rainboots,")
+                print("so how about we go shopping for some later? ")
+                print(f"\U0001F327  \U000027A1  \U0001F6CD \U0001F462 ")
+                print("Penguin Points:")
+                global points
+                points -= 10
+                print(points)
+            if rainy_ans == "B": 
+                print("Sounds like so much fun! I wonder which games we'll play today. How about you choose!")
+                print("Penguin Points:")
+                points += 10
+                print(points)
+                video_games = input("What video game do you want to play?: ")
+                print(f"{video_games} is such a good choice! Thanks for choosing!")
+                print(f"\U0001F327   \U0001F6AA     \U0001F3AE 	 {CHILLY}    \U0001FA91   \U0001F327 ")
+                print("Penguin Points:")
+                points -= 10
+                print(points)
+            break
 
 
 def bonus() -> None:
@@ -176,7 +176,7 @@ def bonus() -> None:
     while True: 
         print("Time to earn bonus Penguin Points!")
         bonus_points = input("Choose A) , B) , C), D)")
-        if bonus_points in ["A","B", "C","D"]:
+        if bonus_points in ["A", "B", "C", "D"]:
             if bonus_points == "A":
                 print("You have been awared 20 bonus points!")
                 print("Penguin Points:")
