@@ -9,10 +9,10 @@ def palindromify(word: str, b: bool) -> str:
     if b == True: 
         # flip all characters
         for i in reversed(range(len(word))):
-           result = result + word[i]  
+                result = result + word[i]  
     else:
         for i in reversed(range(len(word) - 1)):
-            result = result + word[i]  
+                result = result + word[i]  
     return result
             
 
