@@ -8,10 +8,11 @@ def avoid_fifth(word: str) -> str:
     new_str: str = "" 
     i: int = 0
     while i < len(word):
-        if word[i] != "E" and word[i] != "e" :
+        if word[i] != "E" and word[i] != "e":
             new_str = new_str + word[i]
         i += 1
     return new_str
+
 
 def main() -> None:
     """Entrypoint of the program."""

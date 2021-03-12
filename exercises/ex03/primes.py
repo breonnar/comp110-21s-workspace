@@ -11,13 +11,12 @@ def is_prime(n: int) -> bool:
             return False
         else:
             return True
-        i =+ 1
+        i = i + 1
     return False
 
 
-def list_primes (a:int, b:int) -> list[int] :
-    """the list for primes."""
-    prime_nums: list[int] = []
+def list_primes(a: int, b: int) -> list[int]:
+    """The list for primes."""
 
 
 def main() -> None:
