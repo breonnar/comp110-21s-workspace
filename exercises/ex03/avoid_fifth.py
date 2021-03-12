@@ -3,19 +3,15 @@
 __author__: str = "730327440"
 
 
-def avoid_fifth (word: str) -> str :
+def avoid_fifth(word: str) -> str:
     """Whenever strings have E or e, produce a new string them."""
     new_str: str = "" 
     i: int = 0
     while i < len(word):
         if word[i] != "E" and word[i] != "e" :
-            new_str= new_str + word[i]
-        i+=1
+            new_str = new_str + word[i]
+        i += 1
     return new_str
-
-
-
-
 
 def main() -> None:
     """Entrypoint of the program."""
@@ -23,6 +19,7 @@ def main() -> None:
     # ex. print(avoid_fifth("hello there"))
     avoid_fifth("str")
     print(avoid_fifth("HELLO, my dear friend"))
+
 
 if __name__ == "__main__":
     main()
