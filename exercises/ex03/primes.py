@@ -4,7 +4,7 @@
 __author__: str = "730327440"
 
 
-def is_primes(n: int) -> bool:
+def is_prime(n: int) -> bool:
     """Figuring out if a number is prime or not.""" 
     i: int = 2
     while i < n:
@@ -18,7 +18,7 @@ def list_primes(a: int, b: int) -> list[int]:
     """The list for primes."""
     plist: list[int] = []
     for x in range(a,b):
-        if is_primes(x):
+        if is_prime(x):
             plist.append(x)
     return plist
 
@@ -27,14 +27,14 @@ def main() -> None:
     """Entrypoint of the program."""
     # Put print statements here to test your function
     # ex. print(is_prime(5)), print(list_primes(10, 20))
-    is_primes(2)
-    print(is_primes(16))
-    print(list_primes(3, 7))
-    print(list_primes(10, 20))
-    print(list_primes(25, 28))
-    print(list_primes(-1, 5))
+    is_prime(2)
+    print(is_prime(16))
+    print(list_prime(3, 7))
+    print(list_prime(10, 20))
+    print(list_prime(25, 28))
+    print(list_prime(-1, 5))
 
 
 if __name__ == "__main__":
     main()
-    is_primes(1)
+    is_prime(1)
