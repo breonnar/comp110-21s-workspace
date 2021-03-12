@@ -6,8 +6,7 @@ __author__: str = "730327440"
 def palindromify(word: str, b: bool) -> str:
     """I need to flip characters."""
     result: str = word
-    b = cond
-    if cond is True: 
+    if b == True: 
         # flip all characters
         for i in reversed(range(len(word))):
            result = result + word[i]  
