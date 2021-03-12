@@ -22,6 +22,7 @@ def list_primes(a: int, b: int) -> list[int]:
             plist.append(x)
     return plist
 
+
 def main() -> None:
     """Entrypoint of the program."""
     # Put print statements here to test your function
