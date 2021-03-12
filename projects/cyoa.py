@@ -165,7 +165,7 @@ def rainy_plans() -> None:
                 print(f"{video_games} is such a good choice! Thanks for choosing!")
                 print(f"\U0001F327   \U0001F6AA     \U0001F3AE 	 {CHILLY}    \U0001FA91   \U0001F327 ")
                 print("Penguin Points:")
-                points -= 10
+                points += 10
                 print(points)
             break
 
