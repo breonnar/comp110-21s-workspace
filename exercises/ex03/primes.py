@@ -13,8 +13,6 @@ def is_prime(n: int) -> bool:
         i=+1
     return False
 
-        
-
 
 
 
