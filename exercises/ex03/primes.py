@@ -26,8 +26,9 @@ def main() -> None:
     """Entrypoint of the program."""
     # Put print statements here to test your function
     # ex. print(is_prime(5)), print(list_primes(10, 20))
-    is_prime()
+    is_prime(2)
     print(is_prime(16))
 
 if __name__ == "__main__":
     main()
+    is_prime(1)
