@@ -17,7 +17,7 @@ def is_prime(n: int) -> bool:
 def list_primes(a: int, b: int) -> list[int]:
     """The list for primes."""
     plist: list[int] = []
-    for x in range(a,b):
+    for x in range(a, b):
         if is_prime(x):
             plist.append(x)
     return plist
@@ -29,10 +29,10 @@ def main() -> None:
     # ex. print(is_prime(5)), print(list_primes(10, 20))
     is_prime(2)
     print(is_prime(16))
-    print(list_prime(3, 7))
-    print(list_prime(10, 20))
-    print(list_prime(25, 28))
-    print(list_prime(-1, 5))
+    print(list_primes(3, 7))
+    print(list_primes(10, 20))
+    print(list_primes(25, 28))
+    print(list_primes(-1, 5))
 
 
 if __name__ == "__main__":
