@@ -1,18 +1,17 @@
 """EX03 - prime functions."""
 
+
 __author__: str = "730327440"
 
 
 def is_prime(n: int) -> bool:
     """Figuring out if a number is prime or not.""" 
     i: int = 2
-    while n >= 1:
+    while i < n:
         if (n % i) == 0:
             return False
-        else:
-            return True
         i = i + 1
-    return False
+    return True
 
 
 def list_primes(a: int, b: int) -> list[int]:
