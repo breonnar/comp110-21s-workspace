@@ -64,12 +64,3 @@ def count(oki: list[str]) -> dict[str, int]:
         else: 
             built[elements] = 1
     return built 
-
-
-    
-
-
-
-
-
-
